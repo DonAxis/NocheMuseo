@@ -6,18 +6,49 @@
     <title>Unity WebGL Player | Museo</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" href="TemplateData/vistaExtra.css">
-  
+ 
+    
+    <style>
+      /* --- Estilos Corregidos para el Layout --- */
+      
+      /* Estilos para el h1 y la imagen (SE MANTIENEN) */
+      #header-content {
+        text-align: center;
+        margin-top: 20px;
+        /* IMPORTANTE: Eliminamos position y z-index para evitar superposición */
+      }
+
+      #header-content h1 {
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      #header-content img {
+        display: block;
+        margin: 10px auto 20px auto;
+        max-width: 200px;
+      }
+
+      /* Contenedor de Unity (SE MANTIENE, SIN position/z-index) */
+      #unity-container {
+        /* Eliminamos position: relative; y z-index para que fluya después del header */
+        display: block; /* Asegura que ocupe su propio espacio */
+        margin: 0 auto; /* Centra el contenedor si es posible */
+      }
+      
+      /* Si quieres que el fondo del header no sea negro, ajusta el color de fondo aquí o en tu CSS */
+      body {
+        background-color: #ffffff; /* Fondo blanco */
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Contenedor del header para garantizar visibilidad -->
     <div id="header-content">
       <h1>Una noche en el museo</h1>
       <img src="TemplateData/logoipn.jpg" alt="Logo IPN">
     </div>
 
-    <!-- Contenedor de Unity WebGL -->
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
       <div id="unity-loading-bar">

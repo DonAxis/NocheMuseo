@@ -1,0 +1,13 @@
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px; /* Ajusta tamaño según necesidad */
+  }

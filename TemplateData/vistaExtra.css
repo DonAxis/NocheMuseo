@@ -12,7 +12,7 @@ HTML, body {
     overflow-x: hidden; /* evita scroll horizontal */
 
     overflow-y: auto;   /* permite scroll vertical */
-    min-height: 500vh; 
+    min-height: 130vh; 
 }
 
 
